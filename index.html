@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Profile</title>
+  </head>
+
+  <!-- CSS Sarts From Here  -->
+  <style>
+        body {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+          display: flex;
+          justify-content: center;
+          /* align-items: center; */
+        }
+
+        .card {
+          background-color: white;
+          width: 350px;
+          /* border: 2px solid black; */
+          border-radius: 10px;
+          display: flex;
+          margin: 30px 0px 0px 0px;
+          transition: 0.5s;
+          /* box-shadow: lime 3px 3px 30px 1px; */
+           box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+          flex-direction: row;
+          /* align-items: center; */
+          justify-content: center
+        }
+
+        .card:hover {
+          transform: scale(1.05);
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          /* border: 2px solid lime; */
+          box-shadow: rgb(0, 0, 0) 1px 1px 10px 2px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 40px;
+          margin-left: 5px;
+
+
+        }
+        .details {
+          margin-left: 30px;
+
+
+        }
+
+        .name {
+          font-weight: bolder;
+        }
+
+        .location {
+          color: gray;
+        }
+
+        .buttons {
+          gap: 5px;
+          margin-top: 20px;
+          margin-bottom: 5px;
+          display: flex;
+          /* align-items: center; */
+          border-radius: 5px;
+          width: 100%;
+        }
+        .buttons button {
+      flex: 1;
+      padding: 5px 25px 5px 25px;
+    }
+
+        .statics {
+          display: flex;
+          justify-content: center
+          width: 100%;
+          text-align: center;
+          color: gray;
+        }
+
+
+        .followers {
+          margin-right: -5px;
+        }
+
+        .following {
+          margin-left: 5px;
+        }
+
+        .follow {
+          background-color: #5374ff;
+          color: white;
+          /* margin: 5px 20px 5px 20px; */
+          border-radius: 5px;
+          width: 100%;
+        }
+        .chat {
+          border-radius: 5px 10px 5px 10px;
+          color: black;
+          border-color: #5374ff;
+          width: 100%;
+        }
+  </style>
+
+  <!-- CSS Ends Here -->
+
+  
+  <body>
+    <div class="card">
+      <div class="image">
+        <img src="sardar.jpg" alt="profile" />
+      </div>
+
+      <div class="details">
+        <div class="name"><p>Sardar Chandio</p></div>
+        <div class="location"><p>Karachi , Pakistan</p></div>
+
+        <div class="statics">
+          <div>
+            <h3>9.8k</h3>
+            <p>Followers</p>
+          </div>
+
+          <div>
+            <h3> 264</h3>
+            <p>Followings</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="chat">Chat</button>
+          <button class="follow">Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
